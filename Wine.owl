@@ -1,0 +1,856 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3">
+        <rdfs:comment>The wine ontology that describes various wine based on grape varietals, tastes, flavours, and countries.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#definition">
+        <definition>An explanation of an entity.</definition>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Argentina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Argentina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Australia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Australia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Austria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Austria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Barbera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Barbera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Franc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Franc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:label>Cabernet Franc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Sauvignon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Sauvignon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:label>Cabernet Sauvignon</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Carmenere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Carmenere">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chenin_Blanc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chenin_Blanc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+        <rdfs:label>Chenin Blanc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Corvina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Corvina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cranberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cranberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <definition>A sweet wine typically served with dessert.</definition>
+        <rdfs:label>Dessert Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <definition>A fermented alcoholic beverage made from a variety of base ingredients</definition>
+        <rdfs:label>Fruit Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Gamay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Gamay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Germany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Germany">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Glera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Glera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Greece -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Greece">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grenache -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grenache">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Hungary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Hungary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Israel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Israel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lebanon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lebanon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Malbec -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Malbec">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium_Dry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium_Dry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+        <rdfs:label>Medium Dry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Merlot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Merlot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Montepulciano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Montepulciano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Moscato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Moscato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Muscat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Muscat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Nebbiolo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Nebbiolo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#New_Zealand -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#New_Zealand">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+        <rdfs:label>New Zealand</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Petite_Sirah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Petite_Sirah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:label>Petite Sirah</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Grigio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Grigio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+        <rdfs:label>Pinot Gris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Gris -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Gris">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+        <rdfs:label>Pinot Gris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Noir -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Noir">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
+        <rdfs:label>Pinot Noir</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinotage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinotage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Primitivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Primitivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <definition>A type of wine made from dark-colored grape varieties.</definition>
+        <rdfs:label>Red Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Blend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Blend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
+        <rdfs:label>Red Blend</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Riesling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Riesling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sangiovese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sangiovese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sauvignon_Blanc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sauvignon_Blanc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+        <rdfs:label>Sauvignon Blanc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Semillon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Semillon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Shiraz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Shiraz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+        <rdfs:label>South Africa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <definition>A wine with significant levels of carbon dioxide in it, making it fizzy.</definition>
+        <rdfs:label>Sparking Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sweet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Syrah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Syrah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile">
+        <rdfs:label>Taste Profile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tempranillo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tempranillo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:label>Touriga Nacional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Uruguay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Uruguay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Dry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Dry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+        <rdfs:label>Very Dry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Sweet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Sweet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+        <rdfs:label>Very Sweet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Viognier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Viognier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <definition>A wine whose colour can be straw-yellow, yellow-green, or yellow-gold.</definition>
+        <rdfs:label>White Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Blend -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Blend">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
+        <rdfs:label>White Blend</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine">
+        <definition>An alcoholic beverage made from grapes.</definition>
+        <rdfs:comment>Wine</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness">
+        <rdfs:label>Wine Sweetness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Zinfandel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Zinfandel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Aromatic_&amp;_Vibrant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Aromatic_&amp;_Vibrant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Aromatic &amp; Vibrant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Bold &amp; Full</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full_Flavoured -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full_Flavoured">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Bold &amp; Full Flavoured</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Light_&amp;_Fruity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Light_&amp;_Fruity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Light &amp; Fruity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Rich_&amp;_Full -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Rich_&amp;_Full">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Rich &amp; Full</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smooth_&amp;_Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smooth_&amp;_Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+        <rdfs:label>Smooth &amp; Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cranberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Argentina"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Australia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Austria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Germany"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Greece"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Hungary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Israel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lebanon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#New_Zealand"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Uruguay"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Glera"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Noir"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Medium_Dry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sweet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Dry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Sweet"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Blend"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Semillon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Blend"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Aromatic_&amp;_Vibrant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full_Flavoured"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Light_&amp;_Fruity"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Rich_&amp;_Full"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smooth_&amp;_Medium"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
