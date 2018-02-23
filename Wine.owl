@@ -36,6 +36,154 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -48,6 +196,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -84,6 +240,38 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Cherry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Cherry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Fruit_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Fruit_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackberry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackberry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackcurrant_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackcurrant_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blend -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blend">
@@ -97,6 +285,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -135,6 +331,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cassis_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cassis_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cedar_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cedar_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay">
@@ -161,10 +373,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chocolate_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chocolate_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Citrus_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Citrus_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Coffee_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Coffee_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -191,12 +435,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Crisp_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Crisp_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
         <definition>A sweet wine typically served with dessert.</definition>
         <rdfs:label>Dessert Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dried_Fruit_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dried_Fruit_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -209,10 +469,47 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Earthy_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Earthy_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Floral_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Floral_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fresh_Bread_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fresh_Bread_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -228,7 +525,7 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
         <definition>A fermented alcoholic beverage made from a variety of base ingredients</definition>
         <rdfs:label>Fruit Wine</rdfs:label>
     </owl:Class>
@@ -259,6 +556,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grape_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grape_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Greece -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Greece">
@@ -275,10 +580,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Herb_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Herb_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -307,10 +628,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Jammy_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Jammy_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lebanon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lebanon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lime_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lime_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Liquorice_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Liquorice_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lively_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lively_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -340,10 +693,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Melon_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Melon_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Merlot -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Merlot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mineral_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mineral_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mint_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mint_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mocha_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mocha_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -389,6 +774,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Orchard_Fruit_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Orchard_Fruit_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach">
@@ -397,10 +790,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pepper_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pepper_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -450,6 +867,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Plum_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Plum_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal">
@@ -474,12 +899,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
         <definition>A type of wine made from dark-colored grape varieties.</definition>
         <rdfs:label>Red Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Berry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Berry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -489,6 +930,14 @@
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Blend">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
         <rdfs:label>Red Blend</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Fruit_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Fruit_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -535,6 +984,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smoky_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smoky_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa">
@@ -555,9 +1012,17 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
         <definition>A wine with significant levels of carbon dioxide in it, making it fizzy.</definition>
         <rdfs:label>Sparking Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spice_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spice_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -566,6 +1031,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#FruitWine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -602,12 +1075,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tobacco_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tobacco_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#DessertWine"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
         <rdfs:label>Touriga Nacional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tropical_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tropical_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -624,6 +1113,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Uruguay">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Vanilla_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Vanilla_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
     </owl:Class>
     
 
@@ -654,10 +1151,18 @@
     
 
 
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Violet_Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Violet_Flavour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WhiteWine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
         <definition>A wine whose colour can be straw-yellow, yellow-green, or yellow-gold.</definition>
         <rdfs:label>White Wine</rdfs:label>
     </owl:Class>
@@ -673,9 +1178,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine -->
+    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine">
+    <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType">
         <definition>An alcoholic beverage made from grapes.</definition>
         <rdfs:comment>Wine</rdfs:comment>
     </owl:Class>
@@ -774,6 +1279,54 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Cherry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Fruit_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackberry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackcurrant_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cassis_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cedar_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chocolate_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Citrus_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Coffee_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Crisp_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dried_Fruit_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Earthy_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Floral_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fresh_Bread_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grape_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Herb_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Jammy_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lime_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Liquorice_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Lively_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Melon_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mineral_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mint_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mocha_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Orchard_Fruit_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Peach_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pepper_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Plum_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Berry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Fruit_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smoky_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spice_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Strawberry_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tobacco_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tropical_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Vanilla_Flavour"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Violet_Flavour"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
