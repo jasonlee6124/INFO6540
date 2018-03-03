@@ -44,18 +44,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:label>has_colour</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -63,9 +56,7 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -73,7 +64,7 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -81,7 +72,7 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -89,94 +80,7 @@
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#relational_property">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
-            </owl:Restriction>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_carbonate"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#SparklingWine"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#WineType"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Wine_Sweetness"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Taste_Profile"/>
-            </owl:Restriction>
-        </rdfs:range>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Country"/>
-            </owl:Restriction>
-        </rdfs:range>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
@@ -189,6 +93,32 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.pizza.owl/ontologies/PIZZA_0000037 -->
+
+    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA_0000037">
+        <rdfs:label xml:lang="en">Colour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pizza.owl/ontologies/PIZZA_0000038 -->
+
+    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA_0000038">
+        <rdfs:subClassOf rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000037"/>
+        <rdfs:label xml:lang="en">Dark_colour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.pizza.owl/ontologies/PIZZA_0000039 -->
+
+    <owl:Class rdf:about="http://www.pizza.owl/ontologies/PIZZA_0000039">
+        <rdfs:subClassOf rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000037"/>
+        <rdfs:label xml:lang="en">Light_colour</rdfs:label>
+    </owl:Class>
     
 
 
@@ -236,6 +166,102 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Barbera">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackberry_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mineral_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Plum_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spice_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Vanilla_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Dry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Light_&amp;_Fruity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smooth_&amp;_Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -672,6 +698,66 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Malbec">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Black_Fruit_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Mineral_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Vanilla_Flavour"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Very_Dry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Bold_&amp;_Full"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Smooth_&amp;_Medium"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Argentina"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
