@@ -9,6 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:ontologies="http://www.pizza.owl/ontologies/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3">
+        <rdfs:label>Wine</rdfs:label>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Wine
 
 MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
