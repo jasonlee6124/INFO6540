@@ -37,6 +37,14 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
     
 
 
+    <!-- http://www.pizza.owl/ontologies/PIZZA_0000042 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.pizza.owl/ontologies/PIZZA_0000042">
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#definition">
@@ -61,7 +69,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:label>has_colour</rdfs:label>
+        <ontologies:PIZZA_0000042>The Domain of &quot;has_colour&quot; is &quot;WineType&quot; and Range is &quot;Colour&quot;.</ontologies:PIZZA_0000042>
     </owl:ObjectProperty>
     
 
@@ -70,6 +78,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <ontologies:PIZZA_0000042>The Domain of &quot;has_flavour&quot; is &quot;WineType&quot; and Range is &quot;Flavour&quot;.</ontologies:PIZZA_0000042>
     </owl:ObjectProperty>
     
 
@@ -78,6 +87,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <ontologies:PIZZA_0000042>The Domain of &quot;has_sweetness&quot; is &quot;WineType&quot; and Range is &quot;Wine_Sweetness&quot;.</ontologies:PIZZA_0000042>
     </owl:ObjectProperty>
     
 
@@ -86,6 +96,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_taste">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <ontologies:PIZZA_0000042>The Domain of &quot;has_taste&quot; is &quot;WineType&quot; and Range is &quot;Taste_Profile&quot;.</ontologies:PIZZA_0000042>
     </owl:ObjectProperty>
     
 
@@ -94,6 +105,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <ontologies:PIZZA_0000042>The Domain of &quot;produce_wine&quot; is &quot;Country&quot; and Range is &quot;WineType&quot;.</ontologies:PIZZA_0000042>
     </owl:ObjectProperty>
     
 
