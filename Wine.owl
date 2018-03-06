@@ -12,7 +12,7 @@
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Wine
 
 MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
-        <rdfs:comment>The wine ontology that describes various wine based on grape varietals, tastes, flavours, and countries.</rdfs:comment>
+        <rdfs:comment>The wine ontology that describes various wine based on colour(dark, light), wine type(grape varietals), tastes, sweetness, flavours, and countries.</rdfs:comment>
     </owl:Ontology>
     
 
@@ -238,12 +238,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blackberry_Flavour"/>
             </owl:Restriction>
@@ -330,6 +324,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Barbera</ontologies:PIZZA_0000040>
@@ -547,12 +547,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Blueberry_Flavour"/>
             </owl:Restriction>
@@ -605,6 +599,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>LCBO website - http://www.lcbo.com/lcbo/product/muskoka-lakes-blueberry-wine/457341</ontologies:PIZZA_0000040>
         <definition>Opaque, ruby red in colour with pronounced aromas of blueberry and table grapes.</definition>
     </owl:Class>
@@ -624,12 +624,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Franc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -786,6 +780,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Cabernet_Franc</ontologies:PIZZA_0000040>
         <definition>One of the major black grape varieties worldwide. Principally grown for blending with Cabernet Sauvignon and Merlot in the Bordeaux style, but can also be vinified alone.</definition>
     </owl:Class>
@@ -796,12 +796,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cabernet_Sauvignon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1012,6 +1006,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Cabernet_Sauvignon</ontologies:PIZZA_0000040>
         <definition>One of the world&apos;s most widely recognized red wine grape varieties.</definition>
     </owl:Class>
@@ -1032,12 +1032,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Carmenere">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1160,8 +1154,14 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chile"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Carménère</ontologies:PIZZA_0000040>
@@ -1193,12 +1193,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chardonnay">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sparkling_Wine"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1337,6 +1331,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Chardonnay</ontologies:PIZZA_0000040>
         <definition>A green-skinned grape variety used in the production of white wine.</definition>
     </owl:Class>
@@ -1347,12 +1347,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Chenin_Blanc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1437,6 +1431,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Chenin_blanc</ontologies:PIZZA_0000040>
         <definition>A white wine grape variety from the Loire Valley of France.</definition>
     </owl:Class>
@@ -1447,12 +1447,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1475,6 +1469,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Cherry Wine website - http://www.cherrywine.com/learn-about/cherry-wines/</ontologies:PIZZA_0000040>
@@ -1533,12 +1533,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Corvina">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1661,8 +1655,14 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wine-Searcher website - https://www.wine-searcher.com/grape-117-corvina</ontologies:PIZZA_0000040>
@@ -1683,12 +1683,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cranberry">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -1729,6 +1723,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Johnston&apos;s Cranberry Marsh &amp; Muskoka Lakes Winery website - http://cranberry.ca/product/cranberry-wine/</ontologies:PIZZA_0000040>
@@ -1787,12 +1787,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
     <!-- http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Flavour"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Flavor</ontologies:PIZZA_0000040>
         <definition>The sensory impression of food or other substance, and is determined primarily by the chemical senses of taste and smell.</definition>
     </owl:Class>
@@ -1925,12 +1919,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour"/>
             </owl:Restriction>
@@ -2025,6 +2013,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#New_Zealand"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Gamay</ontologies:PIZZA_0000040>
         <definition>A purple-colored grape variety used to make red wines, most notably grown in Beaujolais and in the Loire Valley around Tours.</definition>
     </owl:Class>
@@ -2096,7 +2090,7 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Glera_(grape)</ontologies:PIZZA_0000040>
@@ -2128,12 +2122,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Grenache">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2278,6 +2266,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Grenache</ontologies:PIZZA_0000040>
         <definition>One of the most widely planted red wine grape varieties in the world.</definition>
     </owl:Class>
@@ -2297,12 +2291,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Honey">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2337,6 +2325,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Mead</ontologies:PIZZA_0000040>
@@ -2414,12 +2408,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Malbec">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2558,6 +2546,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Malbec</ontologies:PIZZA_0000040>
         <definition>A purple grape variety used in making red wine.</definition>
     </owl:Class>
@@ -2597,12 +2591,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Merlot">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2765,6 +2753,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Merlot</ontologies:PIZZA_0000040>
         <definition>A dark blue-colored wine grape variety, that is used as both a blending grape and for varietal wines.</definition>
     </owl:Class>
@@ -2802,12 +2796,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Montepulciano">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2892,6 +2880,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Montepulciano_d%27Abruzzo</ontologies:PIZZA_0000040>
         <definition>A red Italian wine made from the Montepulciano wine grape in the Abruzzo region of east-central Italy.</definition>
     </owl:Class>
@@ -2902,12 +2896,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Moscato">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -2980,6 +2968,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wine Folly website - http://winefolly.com/review/moscato-wine/</ontologies:PIZZA_0000040>
         <definition>Famous for its sweet flavors of peach, orange blossom and nectarine. The name originates from Italy, but the Muscat grape may be one of the oldest cultivated varieties in the world.</definition>
         <rdfs:seeAlso>Muscat</rdfs:seeAlso>
@@ -2991,12 +2985,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Muscat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3093,6 +3081,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Muscat_(grape)</ontologies:PIZZA_0000040>
         <definition>Over 200 grape varieties belonging to the Vitis vinifera species that have been used in wine production and as raisin and table grapes around the globe for many centuries.</definition>
         <rdfs:seeAlso>Moscato</rdfs:seeAlso>
@@ -3125,12 +3119,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Crisp_Flavour"/>
             </owl:Restriction>
@@ -3159,6 +3147,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition>A fruit wine made from peaches.</definition>
     </owl:Class>
     
@@ -3177,12 +3171,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pear">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3205,6 +3193,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Perry</ontologies:PIZZA_0000040>
@@ -3235,12 +3229,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Petite_Sirah">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3349,6 +3337,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Durif</ontologies:PIZZA_0000040>
         <definition>A variety of red wine grape primarily grown in Australia, California, France, and Israel.</definition>
     </owl:Class>
@@ -3359,12 +3353,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Gris">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3461,6 +3449,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Pinot_gris</ontologies:PIZZA_0000040>
         <definition>A white wine grape variety of the species Vitis vinifera.</definition>
     </owl:Class>
@@ -3472,12 +3466,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinot_Noir">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sparkling_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3688,6 +3676,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Pinot_noir</ontologies:PIZZA_0000040>
         <definition>A red wine grape variety of the species Vitis vinifera.</definition>
     </owl:Class>
@@ -3698,12 +3692,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Pinotage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3778,8 +3766,14 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#South_Africa"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Pinotage</ontologies:PIZZA_0000040>
@@ -3811,12 +3805,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Primitivo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3891,8 +3879,14 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Zinfandel</ontologies:PIZZA_0000040>
@@ -3906,12 +3900,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Raspberry">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -3940,6 +3928,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_sweetness"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wine Maker Magazine website - https://winemakermag.com/579-raspberry-wine-tips-from-the-pros</ontologies:PIZZA_0000040>
@@ -4092,12 +4086,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Apple_Flavour"/>
             </owl:Restriction>
@@ -4198,6 +4186,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Riesling</ontologies:PIZZA_0000040>
         <definition>A white grape variety which originated in the Rhine region of Germany.</definition>
     </owl:Class>
@@ -4208,12 +4202,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sangiovese">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -4292,6 +4280,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Sangiovese</ontologies:PIZZA_0000040>
         <definition>A red Italian wine grape variety that derives its name from the Latin sanguis Jovis, &quot;the blood of Jupiter&quot;.</definition>
     </owl:Class>
@@ -4302,12 +4296,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Sauvignon_Blanc">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -4416,6 +4404,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Sauvignon_blanc</ontologies:PIZZA_0000040>
         <definition>A green-skinned grape variety that originates from the Bordeaux region of France.</definition>
     </owl:Class>
@@ -4427,12 +4421,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Semillon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dessert_Wine"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -4529,6 +4517,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#France"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/S%C3%A9millon</ontologies:PIZZA_0000040>
         <definition>A golden-skinned grape used to make dry and sweet white wines, mostly in France and Australia.</definition>
     </owl:Class>
@@ -4539,12 +4533,6 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Shiraz">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -4701,6 +4689,12 @@ MyNSLC website - https://www.mynslc.com/Products/Wine</ontologies:PIZZA_0000040>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Shiraz_wine</ontologies:PIZZA_0000040>
         <definition>Has been shown to be identical to Syrah and originating in southeast France with no connection to Persia (Iran).</definition>
     </owl:Class>
@@ -4763,12 +4757,6 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Fruit_Wine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Red_Fruit_Flavour"/>
             </owl:Restriction>
@@ -4795,6 +4783,12 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Canada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Strawberry_Wine</ontologies:PIZZA_0000040>
@@ -4826,12 +4820,6 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Syrah">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -4964,6 +4952,12 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Syrah</ontologies:PIZZA_0000040>
         <definition>A dark-skinned grape variety grown throughout the world and used primarily to produce red wine.</definition>
     </owl:Class>
@@ -4983,12 +4977,6 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Tempranillo">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -5079,6 +5067,12 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Spain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Tempranillo</ontologies:PIZZA_0000040>
         <definition>A black grape variety widely grown to make full-bodied red wines in its native Spain.</definition>
     </owl:Class>
@@ -5099,12 +5093,6 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Touriga_Nacional">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Dessert_Wine"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -5191,8 +5179,14 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Portugal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wine Folly website - http://winefolly.com/review/exploring-touriga-nacional-wine/</ontologies:PIZZA_0000040>
@@ -5253,12 +5247,6 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
 
     <owl:Class rdf:about="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Viognier">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#White_Wine"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
@@ -5359,6 +5347,12 @@ My NSLC website - https://www.mynslc.com/en/products/Wine/Sparkling</ontologies:
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000039"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Viognier</ontologies:PIZZA_0000040>
@@ -5500,12 +5494,6 @@ MyNSLC website - https://www.mynslc.com/en/About-NSLC/Media-Centre/Glossary</ont
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#RedWine"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
-                <owl:someValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_flavour"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#Cherry_Flavour"/>
             </owl:Restriction>
@@ -5592,6 +5580,12 @@ MyNSLC website - https://www.mynslc.com/en/About-NSLC/Media-Centre/Glossary</ont
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#produces_wine"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#USA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jasonlee/ontologies/2018/1/untitled-ontology-3#has_colour"/>
+                <owl:allValuesFrom rdf:resource="http://www.pizza.owl/ontologies/PIZZA_0000038"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <ontologies:PIZZA_0000040>Wikipedia website - https://en.wikipedia.org/wiki/Zinfandel</ontologies:PIZZA_0000040>
