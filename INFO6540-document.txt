@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 This folder includes INFO6540 assignment. 
+=======
+This is updated.
+>>>>>>> 460e6440be1e6d73457eff9882e86b17a3aa0b95
