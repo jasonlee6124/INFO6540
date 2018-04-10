@@ -1,1 +1,1 @@
-This is the test.
+This folder includes INFO6540 assignment. 
